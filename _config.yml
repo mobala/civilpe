@@ -3,7 +3,7 @@ title_left    : "Civil"
 title_right   : "PE" # default: ""
 description   : "Things I did and didn't learn in engineering school."
 keywords      : "civil, engineering, pe, exam"
-url           : https://mobala.github.io/civipe # site url
+url           : https://mobala.github.io/civilpe # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
