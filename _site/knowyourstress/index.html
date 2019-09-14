@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/logo.png">
+
+<title>Mechanics of Materials Review - Bending, Shear, and Axial Stresses | EngineerLessons</title>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Mechanics of Materials Review - Bending, Shear, and Axial Stresses | EngineerLessons</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Mechanics of Materials Review - Bending, Shear, and Axial Stresses" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="One thing I struggled with as I started working in structural engineering was having a complete, and comprehensive understanding of where stresses occur and how they interact with each other. This really comes in handy when it comes to determining boundary conditions and design connections, especially welds." />
+<meta property="og:description" content="One thing I struggled with as I started working in structural engineering was having a complete, and comprehensive understanding of where stresses occur and how they interact with each other. This really comes in handy when it comes to determining boundary conditions and design connections, especially welds." />
+<link rel="canonical" href="http://localhost:4000/knowyourstress/" />
+<meta property="og:url" content="http://localhost:4000/knowyourstress/" />
+<meta property="og:site_name" content="EngineerLessons" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-20T00:00:00-07:00" />
+<script type="application/ld+json">
+{"description":"One thing I struggled with as I started working in structural engineering was having a complete, and comprehensive understanding of where stresses occur and how they interact with each other. This really comes in handy when it comes to determining boundary conditions and design connections, especially welds.","@type":"BlogPosting","url":"http://localhost:4000/knowyourstress/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/ruler-pencil.png"}},"headline":"Mechanics of Materials Review - Bending, Shear, and Axial Stresses","dateModified":"2019-04-20T00:00:00-07:00","datePublished":"2019-04-20T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/knowyourstress/"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<link href="/assets/css/screen.css" rel="stylesheet">
+
+<link href="/assets/css/main.css" rel="stylesheet">
+
+<script src="/assets/js/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body class="layout-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/ruler-pencil.png" alt="EngineerLessons">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+                </li>
+
+
+
+                <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+<div class="mainheading">
+    <h1 class="sitetitle">EngineerLessons</h1>
+    <p class="lead">
+        Lessons on civil engineering, design, and career development.
+    </p>
+</div>
+
+<!-- Content
+================================================== -->
+<div class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Mechanics of Materials Review - Bending, Shear, and Axial Stresses&url=http://localhost:4000/knowyourstress/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/knowyourstress/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/knowyourstress/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+
+        </div>
+
+        <!-- Post -->
+        
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                <!-- Author Box -->
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">Mechanics of Materials Review - Bending, Shear, and Axial Stresses</h1>
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            <!--  -->
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p>One thing I struggled with as I started working in structural engineering was having a complete, and comprehensive understanding of where stresses occur and how they interact with each other. This really comes in handy when it comes to determining boundary conditions and design connections, especially welds.</p>
+
+<blockquote>
+  <p>I am an MC over I enginer.</p>
+</blockquote>
+
+<p>The above quote was told to me by a senior technical lead when I was starting out, and it has since followed me through all the work I’ve done. I mention this because many engineers don’t understand how critical knowledge of the fundamentals are - a mentality that inevitably leads to <em>garbage in garbage out</em> design.</p>
+<h2 id="key-concepts">Key Concepts</h2>
+
+<h3 id="bending-stress">Bending Stress</h3>
+<p>This is literally what it sounds like - you bend something, stresses will result in that thing, usually at the top and bottom or sides of the section (shape).</p>
+
+<p><img src="http://localhost:4000/assets/images/bendingdistribution.png" alt="Image of Bending Stress Distribution" title="Bending Stress Distribution" /></p>
+
+<p>This is the flexural stress distribution of a section, as you can see the stresses are highest at the top and the bottom and they are zero in the center - that is the neutral axis. The fact that the stresses point in either direction mean that one side is in tension and the other is in compression.</p>
+
+<blockquote>
+  <p>To visualize how this works take a pencil, grab it with both hands, put your thumbs to the center, and apply force. The side opposite your thumbs is in tension and the side your thumbs are pressing on is in compression. This happens because the force you are applying to the center of the pencil is causing a bending moment in the pencil.</p>
+</blockquote>
+
+<p>We’ll now look exactly how to calculate bending stress. We will use the variable f with subscript b to represent bending stress ($f_b$), although you will find many books use sigma ($\sigma$) or other variables in their nomenclature. Equation 1 below</p>
+
+<script type="math/tex; mode=display">\begin{equation} f_b =\frac{Mc}{I} \end{equation}</script>
+
+<p>${M =} \text{ Bending Moment}$</p>
+
+<p>${c =} \text{ Distance to the Point to extreme fiber from the Neutral Axis}$</p>
+
+<p>${I =} \text{ Second Moment of Area }$</p>
+
+<p>Equation 1 is the classic formula for determining bending stress in a beam based Euler-Bernoulli Beam Bending Theory. The implication here is that if you know that given you know the section properties of an element and the stress being applied, you can calculate the stress at any point.</p>
+
+<h3 id="shear-stress">Shear Stress</h3>
+
+<p>Shear stress can be a bit more difficult to visualize and understand then bending stress. Both stresses occur from a force acting ona nelement however with shear stress the main idea  is that the stress is acting across the face of a material rather than towards the face like with bending stress.</p>
+
+<p><img src="http://localhost:4000/assets/images/sheardistribution.png" alt="Image of Shear Stress Distribution" title="Shear Stress Distribution" /></p>
+
+<p>This is the shear stress distribution of a section, you can see that the highest concentration of shear is in the center of the section and the lowest is on the top of the section - opposite of bending stress.</p>
+
+<blockquote>
+  <p>Remember the pencil you just pushed against with your thumbs? That was also seeing shear stress. In fact, if you were to continue to apply more force, it would break in one of two ways: the wood fibers in the top or bottom of the pencil would reach their yield point and rip apart, or the whole section would “cut” across do to the high concentration of shear.</p>
+</blockquote>
+
+<p>We’ll now look exactly how to calculate shear stress. We will use the variable f with subscript v to represent shear stress ($f_v$), although you will find many books use tau ($\tau$) or other variables in their nomenclature. Equation 1 below</p>
+
+<script type="math/tex; mode=display">\begin{equation} f_v =\frac{VQ}{Ib} \end{equation}</script>
+
+<p>${V =} \text{ Shear Force}$</p>
+
+<p>${Q =} \text{ First Moment of Area}$</p>
+
+<p>${b =} \text{ Width of Section (Perpendicular to Shear) }$</p>
+
+<p>${I =} \text{ Second Moment of Area }$</p>
+
+<h3 id="axial-stress">Axial Stress</h3>
+
+<p>Axial stresses seem to be the easiest to understand (at least they always were for me). These stresses occur along the longitudinal axis of whatever your are pulling or pushing on.</p>
+
+<p><img src="http://localhost:4000/assets/images/axialdistribution.png" alt="Image of Axial Stress Distribution" title="Axial Stress Distribution" /></p>
+
+<p>This is the axial stress distrbution of a section. Simple right? It occurs uniformly over the shape of a section, just the force over the area.</p>
+
+<blockquote>
+  <p>Grab your pencil again. This time don’t place your thumbs on the center of the pencil, but rather, place both hands on it and pull them away from each other as hard as you can. You can imagine that if you were superman, you would pull the pencil so hard that it would split apart. Axial stress.</p>
+</blockquote>
+
+<script type="math/tex; mode=display">\begin{equation} f_a =\frac{N}{A} \end{equation}</script>
+
+<p>${N =} \text{ Axial Force}$</p>
+
+<p>${A =} \text{ Area}$</p>
+
+<h2 id="example">Example</h2>
+<h3 id="problem">Problem</h3>
+<p>Consider a simply supported beam with a load acting at the center and an axial load at the end. Calculate the maximum bending, shear, and axial stresses.
+<img src="http://localhost:4000/assets/images/example1.png" alt="Image of Example 1" title="Example Problem" /></p>
+
+<h3 id="solution">Solution</h3>
+<p>The reactions for the beam are resolved as follows:</p>
+
+<p><img src="http://localhost:4000/assets/images/example1reactions.png" alt="Image of Example 1" title="Example Problem" /></p>
+
+<p><strong>Beam Properties:</strong></p>
+
+<p>$b = 18in$</p>
+
+<p>$h = 30in$</p>
+
+<p>$c = \frac{h}{2} = 15in$</p>
+
+<p>$A = b*h = 18in * 30in = 540 in^2$</p>
+
+<p>$Q =\frac{A}{2} * \frac{h}{4} = \frac{18in*30in}{2} * \frac{30in}{4} = 2025 in^3$</p>
+
+<p>$I =\frac{bh^3}{12} =  \frac{18in*(30in)^3}{12} = 40500in^4$</p>
+
+<p><strong>Maximum Forces in Beam:</strong></p>
+
+<p>Axial Force: $N = 10 kip$</p>
+
+<p>Shear Force: $V = 2.5 kip$</p>
+
+<p>Bending Moment: $M =\frac{P * L}{4} = \frac{5 kip * 20ft}{4} = 25 kip*ft$</p>
+
+<p><strong>Maximum Stresses in Beam:</strong></p>
+
+<p>Axial Stress: $f_a =\frac{N}{A} = \frac{10 kip}{540 in^2} = 0.018 ksi$</p>
+
+<p>Shear Stress: $f_v =\frac{VQ}{Ib} = \frac{2.5 kip * 2025 in^3}{40500 in^4 * 18in} = 0.007 ksi$</p>
+
+<p>Bending Stress: $f_b =\frac{Mc}{I} = \frac{25 kip*ft * 15 in}{40500 in^4} = 0.009 ksi$</p>
+
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2019-04-20">20 Apr 2019</time></span>           
+                
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    
+                    
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    
+                    
+                </ul>
+            </div>
+            <!-- End Tags -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="//Hi/"> &laquo; Hi</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="//responsespectrum/">Walkthrough of the Response Spectrum Method &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'engineerlessons'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+</div>
+
+
+<!-- Bottom Alert Bar
+================================================== -->
+<div class="alertbar">
+	<div class="container text-center">
+		<span><img src="/assets/images/ruler-pencil.png" style="width: 40px;" alt="EngineerLessons"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+        <form action="https://gmail.us20.list-manage.com/subscribe/post?u=6c3ee53b904aebb381beb08fc&amp;id=329fef7d70" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
+            <div class="mc-field-group">
+            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
+            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+            </div>
+        </form>
+	</div>
+</div>
+
+    
+</div>
+
+<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            
+            
+                
+                    <a class="mt-1 mb-1" href="/categories#Seismic-Design">Seismic Design (4)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#PE-Review">PE Review (4)</a>
+                
+            
+            
+		</div>
+	</div>
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © 2019 EngineerLessons 
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="/assets/js/mediumish.js"></script>
+
+
+
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+
+<script id="dsq-count-scr" src="//engineerlessons.disqus.com/count.js"></script>
+
+
+</body>
+</html>

@@ -1,13 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <description>Things I did and didn't learn in engineering school.</description>
+    <title>EngineerLessons</title>
+    <description>Lessons on civil engineering, design, and career development.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 May 2019 22:38:17 -0700</pubDate>
-    <lastBuildDate>Tue, 28 May 2019 22:38:17 -0700</lastBuildDate>
+    <pubDate>Fri, 13 Sep 2019 20:56:30 -0700</pubDate>
+    <lastBuildDate>Fri, 13 Sep 2019 20:56:30 -0700</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>11 Questions for the PE Seismic Exam</title>
+        <description>
+</description>
+        <pubDate>Sun, 12 May 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/peseismicquiz/</link>
+        <guid isPermaLink="true">http://localhost:4000/peseismicquiz/</guid>
+        
+        <category>quiz</category>
+        
+        
+        <category>Seismic Design</category>
+        
+        <category>PE Review</category>
+        
+      </item>
+    
+      <item>
+        <title>Relative Rigidity - Review on Calculating Lateral Force to Shear Walls</title>
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/hoLuqCTfv9A&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;display: block;margin: auto;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Sat, 11 May 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/relativerigidity/</link>
+        <guid isPermaLink="true">http://localhost:4000/relativerigidity/</guid>
+        
+        <category>relative rigidity</category>
+        
+        <category>ASCE 7</category>
+        
+        
+        <category>Seismic Design</category>
+        
+        <category>PE Review</category>
+        
+      </item>
+    
+      <item>
+        <title>How to Calculate Base Shear per ASCE 7</title>
+        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/c_Yf-pWrO5o&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;display: block;margin: auto;&quot;&gt;&lt;/iframe&gt;
+
+</description>
+        <pubDate>Sat, 04 May 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/Base-Shear/</link>
+        <guid isPermaLink="true">http://localhost:4000/Base-Shear/</guid>
+        
+        <category>base shear</category>
+        
+        <category>ASCE 7</category>
+        
+        
+        <category>Seismic Design</category>
+        
+        <category>PE Review</category>
+        
+      </item>
+    
+      <item>
+        <title>Walkthrough of the Response Spectrum Method</title>
+        <description>&lt;p&gt;A number of months ago a put together a video that goes into the covers the Response Spectrum Method as it is implemented in ASCE 7-10. My aim was to tailor the review to tailor the video to those who are not familiar as to how the method is used in code, and do so through an approach that actually shows the viewer how one can generate their own spectra. For fun, I decided to use data from the El Centro Earthquake to generate my own spectra in an IPython notebook.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/IbyzPQqKDwQ&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;display: block;margin: auto;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;If you would like to learn more about the Response Spectrum Method, or Earthquake Engineering in general, I would recommend reading &lt;a href=&quot;https://amzn.to/2ENuY9Q&quot;&gt;Dynamics of Structures by Anil K. Chopra&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 27 Apr 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/responsespectrum/</link>
+        <guid isPermaLink="true">http://localhost:4000/responsespectrum/</guid>
+        
+        <category>response spectrum method</category>
+        
+        <category>ASCE 7</category>
+        
+        
+        <category>Seismic Design</category>
+        
+        <category>PE Review</category>
+        
+      </item>
+    
+      <item>
+        <title>Mechanics of Materials Review - Bending, Shear, and Axial Stresses</title>
+        <description>&lt;p&gt;One thing I struggled with as I started working in structural engineering was having a complete, and comprehensive understanding of where stresses occur and how they interact with each other. This really comes in handy when it comes to determining boundary conditions and design connections, especially welds.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I am an MC over I enginer.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The above quote was told to me by a senior technical lead when I was starting out, and it has since followed me through all the work I’ve done. I mention this because many engineers don’t understand how critical knowledge of the fundamentals are - a mentality that inevitably leads to &lt;em&gt;garbage in garbage out&lt;/em&gt; design.&lt;/p&gt;
+&lt;h2 id=&quot;key-concepts&quot;&gt;Key Concepts&lt;/h2&gt;
+
+&lt;h3 id=&quot;bending-stress&quot;&gt;Bending Stress&lt;/h3&gt;
+&lt;p&gt;This is literally what it sounds like - you bend something, stresses will result in that thing, usually at the top and bottom or sides of the section (shape).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/bendingdistribution.png&quot; alt=&quot;Image of Bending Stress Distribution&quot; title=&quot;Bending Stress Distribution&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the flexural stress distribution of a section, as you can see the stresses are highest at the top and the bottom and they are zero in the center - that is the neutral axis. The fact that the stresses point in either direction mean that one side is in tension and the other is in compression.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To visualize how this works take a pencil, grab it with both hands, put your thumbs to the center, and apply force. The side opposite your thumbs is in tension and the side your thumbs are pressing on is in compression. This happens because the force you are applying to the center of the pencil is causing a bending moment in the pencil.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We’ll now look exactly how to calculate bending stress. We will use the variable f with subscript b to represent bending stress ($f_b$), although you will find many books use sigma ($\sigma$) or other variables in their nomenclature. Equation 1 below&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation} f_b =\frac{Mc}{I} \end{equation}&lt;/script&gt;
+
+&lt;p&gt;${M =} \text{ Bending Moment}$&lt;/p&gt;
+
+&lt;p&gt;${c =} \text{ Distance to the Point to extreme fiber from the Neutral Axis}$&lt;/p&gt;
+
+&lt;p&gt;${I =} \text{ Second Moment of Area }$&lt;/p&gt;
+
+&lt;p&gt;Equation 1 is the classic formula for determining bending stress in a beam based Euler-Bernoulli Beam Bending Theory. The implication here is that if you know that given you know the section properties of an element and the stress being applied, you can calculate the stress at any point.&lt;/p&gt;
+
+&lt;h3 id=&quot;shear-stress&quot;&gt;Shear Stress&lt;/h3&gt;
+
+&lt;p&gt;Shear stress can be a bit more difficult to visualize and understand then bending stress. Both stresses occur from a force acting ona nelement however with shear stress the main idea  is that the stress is acting across the face of a material rather than towards the face like with bending stress.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/sheardistribution.png&quot; alt=&quot;Image of Shear Stress Distribution&quot; title=&quot;Shear Stress Distribution&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the shear stress distribution of a section, you can see that the highest concentration of shear is in the center of the section and the lowest is on the top of the section - opposite of bending stress.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Remember the pencil you just pushed against with your thumbs? That was also seeing shear stress. In fact, if you were to continue to apply more force, it would break in one of two ways: the wood fibers in the top or bottom of the pencil would reach their yield point and rip apart, or the whole section would “cut” across do to the high concentration of shear.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We’ll now look exactly how to calculate shear stress. We will use the variable f with subscript v to represent shear stress ($f_v$), although you will find many books use tau ($\tau$) or other variables in their nomenclature. Equation 1 below&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation} f_v =\frac{VQ}{Ib} \end{equation}&lt;/script&gt;
+
+&lt;p&gt;${V =} \text{ Shear Force}$&lt;/p&gt;
+
+&lt;p&gt;${Q =} \text{ First Moment of Area}$&lt;/p&gt;
+
+&lt;p&gt;${b =} \text{ Width of Section (Perpendicular to Shear) }$&lt;/p&gt;
+
+&lt;p&gt;${I =} \text{ Second Moment of Area }$&lt;/p&gt;
+
+&lt;h3 id=&quot;axial-stress&quot;&gt;Axial Stress&lt;/h3&gt;
+
+&lt;p&gt;Axial stresses seem to be the easiest to understand (at least they always were for me). These stresses occur along the longitudinal axis of whatever your are pulling or pushing on.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/axialdistribution.png&quot; alt=&quot;Image of Axial Stress Distribution&quot; title=&quot;Axial Stress Distribution&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the axial stress distrbution of a section. Simple right? It occurs uniformly over the shape of a section, just the force over the area.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Grab your pencil again. This time don’t place your thumbs on the center of the pencil, but rather, place both hands on it and pull them away from each other as hard as you can. You can imagine that if you were superman, you would pull the pencil so hard that it would split apart. Axial stress.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{equation} f_a =\frac{N}{A} \end{equation}&lt;/script&gt;
+
+&lt;p&gt;${N =} \text{ Axial Force}$&lt;/p&gt;
+
+&lt;p&gt;${A =} \text{ Area}$&lt;/p&gt;
+
+&lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
+&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
+&lt;p&gt;Consider a simply supported beam with a load acting at the center and an axial load at the end. Calculate the maximum bending, shear, and axial stresses.
+&lt;img src=&quot;http://localhost:4000/assets/images/example1.png&quot; alt=&quot;Image of Example 1&quot; title=&quot;Example Problem&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;The reactions for the beam are resolved as follows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/example1reactions.png&quot; alt=&quot;Image of Example 1&quot; title=&quot;Example Problem&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Beam Properties:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;$b = 18in$&lt;/p&gt;
+
+&lt;p&gt;$h = 30in$&lt;/p&gt;
+
+&lt;p&gt;$c = \frac{h}{2} = 15in$&lt;/p&gt;
+
+&lt;p&gt;$A = b*h = 18in * 30in = 540 in^2$&lt;/p&gt;
+
+&lt;p&gt;$Q =\frac{A}{2} * \frac{h}{4} = \frac{18in*30in}{2} * \frac{30in}{4} = 2025 in^3$&lt;/p&gt;
+
+&lt;p&gt;$I =\frac{bh^3}{12} =  \frac{18in*(30in)^3}{12} = 40500in^4$&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Maximum Forces in Beam:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Axial Force: $N = 10 kip$&lt;/p&gt;
+
+&lt;p&gt;Shear Force: $V = 2.5 kip$&lt;/p&gt;
+
+&lt;p&gt;Bending Moment: $M =\frac{P * L}{4} = \frac{5 kip * 20ft}{4} = 25 kip*ft$&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Maximum Stresses in Beam:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Axial Stress: $f_a =\frac{N}{A} = \frac{10 kip}{540 in^2} = 0.018 ksi$&lt;/p&gt;
+
+&lt;p&gt;Shear Stress: $f_v =\frac{VQ}{Ib} = \frac{2.5 kip * 2025 in^3}{40500 in^4 * 18in} = 0.007 ksi$&lt;/p&gt;
+
+&lt;p&gt;Bending Stress: $f_b =\frac{Mc}{I} = \frac{25 kip*ft * 15 in}{40500 in^4} = 0.009 ksi$&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Apr 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/knowyourstress/</link>
+        <guid isPermaLink="true">http://localhost:4000/knowyourstress/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Hi</title>
+        <description>&lt;p&gt;I’ve decided to start a blog to record the work I’ve done in civil/structural engineering. I’m doing this as a means of not only passing knowledge on to others at an earlier, or perhaps, different stage of their career, but to also pass knowledge on to my future self. Considering how much I remember about just a few years ago, this will surely come in handy.&lt;/p&gt;
+
+&lt;p&gt;Accordingly, I’m developing a course plan for folks interested in structural engineering. One that follows my development as a young engineer. I’m starting out with the basic principles that were reinforced in me as I exited university and began my working career. Topics I plan on covering will include but are not limited to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Mechanics of Materials - Know Your Stresses&lt;/li&gt;
+  &lt;li&gt;Gravity Loads - What to Design For and Where to Look&lt;/li&gt;
+  &lt;li&gt;Lateral Loads - Wind&lt;/li&gt;
+  &lt;li&gt;Lateral Loads - Seismic&lt;/li&gt;
+  &lt;li&gt;Foundations - Designing from the Ground Up&lt;/li&gt;
+  &lt;li&gt;Steel&lt;/li&gt;
+  &lt;li&gt;Connections&lt;/li&gt;
+  &lt;li&gt;Concrete&lt;/li&gt;
+  &lt;li&gt;Lateral Force Resisting Systems&lt;/li&gt;
+  &lt;li&gt;Software&lt;/li&gt;
+  &lt;li&gt;Career Options as a Structural Engineer&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sat, 13 Apr 2019 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/Hi/</link>
+        <guid isPermaLink="true">http://localhost:4000/Hi/</guid>
+        
+        
+      </item>
     
   </channel>
 </rss>
