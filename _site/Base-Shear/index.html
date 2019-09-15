@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="icon" href="https://mobala.github.io/civilpe/assets/images/logo.png">
+<link rel="icon" href="/assets/images/logo.png">
 
 <title>How to Calculate Base Shear per ASCE 7 | EngineerLessons</title>
 
@@ -15,24 +15,24 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Lessons on civil engineering, design, and career development." />
 <meta property="og:description" content="Lessons on civil engineering, design, and career development." />
-<link rel="canonical" href="http://localhost:4000/https://mobala.github.io/civilpe/Base-Shear/" />
-<meta property="og:url" content="http://localhost:4000/https://mobala.github.io/civilpe/Base-Shear/" />
+<link rel="canonical" href="http://localhost:4000/Base-Shear/" />
+<meta property="og:url" content="http://localhost:4000/Base-Shear/" />
 <meta property="og:site_name" content="EngineerLessons" />
 <meta property="og:image" content="http://img.youtube.com/vi/c_Yf-pWrO5o/0.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-05-04T00:00:00-07:00" />
 <script type="application/ld+json">
-{"description":"Lessons on civil engineering, design, and career development.","@type":"BlogPosting","url":"http://localhost:4000/https://mobala.github.io/civilpe/Base-Shear/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/https://mobala.github.io/civilpe/assets/images/ruler-pencil.png"}},"image":"http://img.youtube.com/vi/c_Yf-pWrO5o/0.jpg","headline":"How to Calculate Base Shear per ASCE 7","dateModified":"2019-05-04T00:00:00-07:00","datePublished":"2019-05-04T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/https://mobala.github.io/civilpe/Base-Shear/"},"@context":"https://schema.org"}</script>
+{"description":"Lessons on civil engineering, design, and career development.","@type":"BlogPosting","url":"http://localhost:4000/Base-Shear/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/ruler-pencil.png"}},"image":"http://img.youtube.com/vi/c_Yf-pWrO5o/0.jpg","headline":"How to Calculate Base Shear per ASCE 7","dateModified":"2019-05-04T00:00:00-07:00","datePublished":"2019-05-04T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Base-Shear/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
-<link href="https://mobala.github.io/civilpe/assets/css/screen.css" rel="stylesheet">
+<link href="/assets/css/screen.css" rel="stylesheet">
 
-<link href="https://mobala.github.io/civilpe/assets/css/main.css" rel="stylesheet">
+<link href="/assets/css/main.css" rel="stylesheet">
 
-<script src="https://mobala.github.io/civilpe/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
 
 </head>
 
@@ -54,8 +54,8 @@
     <div class="container pr-0">
 
     <!-- Begin Logo -->
-    <a class="navbar-brand" href="https://mobala.github.io/civilpe/">
-    <img src="https://mobala.github.io/civilpe/assets/images/ruler-pencil.png" alt="EngineerLessons">
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/ruler-pencil.png" alt="EngineerLessons">
     </a>
     <!-- End Logo -->
 
@@ -72,16 +72,16 @@
                 
                 <li class="nav-item">
                 
-                <a class="nav-link" href="https://mobala.github.io/civilpe/index.html">Blog</a>
+                <a class="nav-link" href="/index.html">Blog</a>
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link" href="https://mobala.github.io/civilpe/about">About</a>
+                <a class="nav-link" href="/about">About</a>
                 </li>
 
 
 
-                <script src="https://mobala.github.io/civilpe/assets/js/lunr.js"></script>
+                <script src="/assets/js/lunr.js"></script>
 
 
 <style>
@@ -101,7 +101,7 @@
     <ul></ul>
 </div>
 
-<script src="https://mobala.github.io/civilpe/assets/js/lunrsearchengine.js"></script>
+<script src="/assets/js/lunrsearchengine.js"></script>
 
             </ul>
 
@@ -130,7 +130,20 @@
 <!-- Content
 ================================================== -->
 <div class="main-content">
-    <!-- Begin Article
+    <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+<!-- Begin Article
 ================================================== -->
 <div class="container">
     <div class="row">
@@ -143,19 +156,19 @@
     </p>
     <ul>
         <li class="ml-1 mr-1">
-            <a target="_blank" href="https://twitter.com/intent/tweet?text=How to Calculate Base Shear per ASCE 7&url=http://localhost:4000/https://mobala.github.io/civilpe/Base-Shear/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=How to Calculate Base Shear per ASCE 7&url=http://localhost:4000/Base-Shear/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                 <i class="fab fa-twitter"></i>
             </a>
         </li>
 
         <li class="ml-1 mr-1">
-            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/https://mobala.github.io/civilpe/Base-Shear/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/Base-Shear/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
                 <i class="fab fa-facebook-f"></i>
             </a>
         </li>
 
         <li class="ml-1 mr-1">
-            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/https://mobala.github.io/civilpe/Base-Shear/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/Base-Shear/" onclick="window.open(this.href, 'width=550,height=435');return false;">
                 <i class="fab fa-linkedin-in"></i>
             </a>
         </li>
@@ -229,11 +242,11 @@
                     
                     
                     <li>
-                        <a class="smoothscroll" href="https://mobala.github.io/civilpe/categories#PE-Review">PE Review</a>
+                        <a class="smoothscroll" href="/categories#PE-Review">PE Review</a>
                     </li>
                     
                     <li>
-                        <a class="smoothscroll" href="https://mobala.github.io/civilpe/categories#Seismic-Design">Seismic Design</a>
+                        <a class="smoothscroll" href="/categories#Seismic-Design">Seismic Design</a>
                     </li>
                     
                 </ul>
@@ -246,11 +259,11 @@
                     
                     
                     <li>
-                        <a class="smoothscroll" href="https://mobala.github.io/civilpe/tags#ASCE-7">#ASCE 7</a>
+                        <a class="smoothscroll" href="/tags#ASCE-7">#ASCE 7</a>
                     </li>
                     
                     <li>
-                        <a class="smoothscroll" href="https://mobala.github.io/civilpe/tags#base-shear">#base shear</a>
+                        <a class="smoothscroll" href="/tags#base-shear">#base shear</a>
                     </li>
                     
                 </ul>
@@ -260,10 +273,10 @@
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             
-            <a class="prev d-block col-md-6" href="https://mobala.github.io/civilpe//responsespectrum/"> &laquo; Walkthrough of the Response Spectrum Method</a>
+            <a class="prev d-block col-md-6" href="//responsespectrum/"> &laquo; Walkthrough of the Response Spectrum Method</a>
             
             
-            <a class="next d-block col-md-6 text-lg-right" href="https://mobala.github.io/civilpe//relativerigidity/">Relative Rigidity - Review on Calculating Lateral Force to Shear Walls &raquo; </a>
+            <a class="next d-block col-md-6 text-lg-right" href="//relativerigidity/">Relative Rigidity - Review on Calculating Lateral Force to Shear Walls &raquo; </a>
             
             <div class="clearfix"></div>
             </div>
@@ -309,9 +322,7 @@
 https://search.google.com/structured-data/testing-tool/u/0/
 ================================================== -->
 
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+
 </div>
 
 
@@ -319,7 +330,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
 ================================================== -->
 <div class="alertbar">
 	<div class="container text-center">
-		<span><img src="https://mobala.github.io/civilpe/assets/images/ruler-pencil.png" style="width: 40px;" alt="EngineerLessons"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+		<span><img src="/assets/images/ruler-pencil.png" style="width: 40px;" alt="EngineerLessons"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
         <form action="https://gmail.us20.list-manage.com/subscribe/post?u=6c3ee53b904aebb381beb08fc&amp;id=329fef7d70" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
             <div class="mc-field-group">
             <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
@@ -345,9 +356,9 @@ https://search.google.com/structured-data/testing-tool/u/0/
             
             
                 
-                    <a class="mt-1 mb-1" href="https://mobala.github.io/civilpe/categories#Seismic-Design">Seismic Design (4)</a>
+                    <a class="mt-1 mb-1" href="/categories#Seismic-Design">Seismic Design (4)</a>
                 
-                    <a class="mt-1 mb-1" href="https://mobala.github.io/civilpe/categories#PE-Review">PE Review (4)</a>
+                    <a class="mt-1 mb-1" href="/categories#PE-Review">PE Review (4)</a>
                 
             
             
@@ -381,11 +392,11 @@ https://search.google.com/structured-data/testing-tool/u/0/
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-<script src="https://mobala.github.io/civilpe/assets/js/mediumish.js"></script>
+<script src="/assets/js/mediumish.js"></script>
 
 
 
-<script src="https://mobala.github.io/civilpe/assets/js/ie10-viewport-bug-workaround.js"></script> 
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
 
 
 <script id="dsq-count-scr" src="//engineerlessons.disqus.com/count.js"></script>
