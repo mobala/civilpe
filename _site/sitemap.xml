@@ -25,6 +25,10 @@
 <lastmod>2019-05-12T00:00:00-07:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/Design-of-Non-Structural-Components/</loc>
+<lastmod>2019-11-09T00:00:00-08:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about</loc>
 </url>
 <url>
@@ -41,5 +45,14 @@
 </url>
 <url>
 <loc>http://localhost:4000/category/pe-review/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/practice/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/asce-7/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page2/</loc>
 </url>
 </urlset>
