@@ -6,3 +6,4 @@ tags: [quiz]
 image: assets/images/seismic_quiz.png
 featured: true
 ---
+I created a seismic exam quiz.

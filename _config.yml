@@ -4,7 +4,7 @@ title: "EngineerLessons"
 description: "Lessons on civil engineering, design, and career development."
 logo: 'assets/images/ruler-pencil.png'
 favicon: 'assets/images/ruler-pencil.png'
-baseurl: 
+baseurl: ''
 google_analytics: 'UA-147987033-1'
 disqus: 'engineerlessons'
 mailchimp-list: 'https://gmail.us20.list-manage.com/subscribe/post?u=6c3ee53b904aebb381beb08fc&amp;id=329fef7d70'

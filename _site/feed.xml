@@ -5,8 +5,8 @@
     <description>Lessons on civil engineering, design, and career development.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 Sep 2019 21:31:41 -0700</pubDate>
-    <lastBuildDate>Sat, 14 Sep 2019 21:31:41 -0700</lastBuildDate>
+    <pubDate>Sat, 04 Apr 2020 22:29:16 -0700</pubDate>
+    <lastBuildDate>Sat, 04 Apr 2020 22:29:16 -0700</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -28,7 +28,9 @@
     
       <item>
         <title>Relative Rigidity - Review on Calculating Lateral Force to Shear Walls</title>
-        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/hoLuqCTfv9A&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;display: block;margin: auto;&quot;&gt;&lt;/iframe&gt;
+        <description>&lt;p&gt;In this video I provide a brief overview on how to calculate lateral force to concrete shear walls based on relative rigidity:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/hoLuqCTfv9A&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;display: block;margin: auto;&quot;&gt;&lt;/iframe&gt;
 </description>
         <pubDate>Sat, 11 May 2019 00:00:00 -0700</pubDate>
         <link>http://localhost:4000/relativerigidity/</link>
@@ -47,7 +49,9 @@
     
       <item>
         <title>How to Calculate Base Shear per ASCE 7</title>
-        <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/c_Yf-pWrO5o&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;display: block;margin: auto;&quot;&gt;&lt;/iframe&gt;
+        <description>&lt;p&gt;In this video I provide an example on how to calculate base shear via the equivalent lateral force method perscribed in ASCE 7-10:&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/c_Yf-pWrO5o&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;display: block;margin: auto;&quot;&gt;&lt;/iframe&gt;
 
 </description>
         <pubDate>Sat, 04 May 2019 00:00:00 -0700</pubDate>
